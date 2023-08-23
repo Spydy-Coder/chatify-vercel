@@ -7,7 +7,7 @@ const app = express();
 const socket = require("socket.io");
 require("dotenv").config();
 const path = require('path');
-server.use(express.static(path.resolve(__dirname,'build')))
+app.use(express.static(path.resolve(__dirname,'build')))
 
 app.use(cors());
 app.use(express.json());
